@@ -1,0 +1,269 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Laravel Passport API",
+		"_postman_id": "6355d544-2c23-36cc-4a5f-ba53a95f9790",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": "http://localhost/task/api/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "sasha10@example.net",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User Details",
+			"request": {
+				"url": "http://localhost/task/api/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmZlN2JhNzU5MzBmMGQwZmUyYjM2MjhhMGM3NWJkNzMzMDZkY2I0NGEwZGE0ZTM0OTU1MzZkMmExYzkxYzNmN2FlYWM2NzEyZjIzZGRkNDciLCJpYXQiOjE2MjQ5MDE2NjIuMTk1MDQxLCJuYmYiOjE2MjQ5MDE2NjIuMTk1MDQ2LCJleHAiOjE2NTY0Mzc2NjIuMTg4OTgzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LOgHUE3VghfSNzuEdYvlzAK_KmLfQhgn1tv9BbYdJGEmFRY2-xtXWGA8waLnXnZp4n-huSZZcYH8iFfh_5wt34c24YyiFDlym9_KP0LIivDMQqrkosbFh7X4EtyMuCyYFDmp6c9cmNeQRgDn7JvxgRk3k831O3pJZustgwrz_apilRArFt8xDlOEnc9tE34cjece3f5dWSsrNTJ63PuTL078OQwIYVeCSr1oBHh2N-5yUg3OR59ftsAV6D5pfVr5lEYod_k1ho7di2FTV-iySpE7CHsa4md1JGj5p6p8_91TKTwnmBJk43N5UtIAvelzMHc77AzqZUbhPOAq6BxmPuxzgMRXpKoJepBC3uDat9IiC7je_80404GjFMOhAgC06mTEH_kg7OYxVcqnZTO79t8NDEQbuA9Ur_9WlqrJU6Nin2JDbPltFd99xAnByuF1GpGetW8ol4DRTA_2R05JOA2ST0All-BrzW3Eoc2uPWioGDmv4BSBx-OGbZRdsfyFFvzM47E6ntsrR_icT7TvXGIYS5A_X09G0Gd6oEhF6EDrQZ5HvMdh0ofcDyk6dZlymG-MXosynRevPAFGd_kMjZKH2r6JW5hZztYRI6XponARUZd2QEO2k5vxsjzwmlu0UF2MhACvUDEjrpiauIKDwFuY980Ric9Y8_ZgwburdGk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "All Books",
+			"request": {
+				"url": "http://localhost/task/api/books",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTYzMjc1MTJjMjFhNmJjYjUxZDFiMzVkMzM2M2EwOTZkMzE1ZThmOTY0ZGZiOGQ0ODQ1YjNjMzUwMmEwYTQ5YmQ5NWFiNWNhOTRjZjMyZDQiLCJpYXQiOjE2MjQ4OTkwNjkuMzAwMjQ1LCJuYmYiOjE2MjQ4OTkwNjkuMzAwMjUsImV4cCI6MTY1NjQzNTA2OS4yOTM1NjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.NCUizCVSpkV7eKXuPrFXpMxSKAVF7VyAFhn8OyzvrBAnzG16IM_wc11E8G9CDukX7l4Ma9vrPgD49IkDmX0EKY5FW3aAmNHHs5SIlGZK7oJR2nC6QtcFreGyZhfWIpaRvCox9W0eSTqCwfgO3yzer0ZjE9BFFn_kwgEXUf0WWOVEcP6IaFxXLej6kMjsegJjC8vj7dK9vc7ccEBC_ERZ_Yx39y-NAP7cd9oN07nxEcOyimMX3BhwKkmmneV2DS-l27DSubpxHbHX4E1eGg47bqCbPpCW-YWSxAK3HG13VQ_x_J1YDrYWPydi13rprDPl1C8_cLHS3prq4UNBgOeqCnJFZ2MPy_qq5uCmGCHvH4H7kQIpqB31aWHIlTs9QUDS7oKmBVxzqBqHfDxW_4mZ1OTSc2F5OztIJYmF03uu4I_yIwQpWtZ-UGDzwm-6OQYtDigN4wKanie8syXsn5hAOEBEun6v7bTOCJHPJenr03c93Qb5clWraob2XVwZnYrMeWqwCmVHDPz5n2ZMYLE2DWaZRPqC13PrqVtperR4XRIi4eMe0GEgxwzHIUUopIj-fGw9hzrY_Wnv1N6w7BN-RAFv9BasDdA0Lq5jMHnI9TdDNL62-XQ6Um72Ouk6O2iZLAsh_-s9tWUbS_vnV8nULjQQ-nSy9U7X7IAoTpXVORI",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Book",
+			"request": {
+				"url": "http://localhost/task/api/add-book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTYzMjc1MTJjMjFhNmJjYjUxZDFiMzVkMzM2M2EwOTZkMzE1ZThmOTY0ZGZiOGQ0ODQ1YjNjMzUwMmEwYTQ5YmQ5NWFiNWNhOTRjZjMyZDQiLCJpYXQiOjE2MjQ4OTkwNjkuMzAwMjQ1LCJuYmYiOjE2MjQ4OTkwNjkuMzAwMjUsImV4cCI6MTY1NjQzNTA2OS4yOTM1NjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.NCUizCVSpkV7eKXuPrFXpMxSKAVF7VyAFhn8OyzvrBAnzG16IM_wc11E8G9CDukX7l4Ma9vrPgD49IkDmX0EKY5FW3aAmNHHs5SIlGZK7oJR2nC6QtcFreGyZhfWIpaRvCox9W0eSTqCwfgO3yzer0ZjE9BFFn_kwgEXUf0WWOVEcP6IaFxXLej6kMjsegJjC8vj7dK9vc7ccEBC_ERZ_Yx39y-NAP7cd9oN07nxEcOyimMX3BhwKkmmneV2DS-l27DSubpxHbHX4E1eGg47bqCbPpCW-YWSxAK3HG13VQ_x_J1YDrYWPydi13rprDPl1C8_cLHS3prq4UNBgOeqCnJFZ2MPy_qq5uCmGCHvH4H7kQIpqB31aWHIlTs9QUDS7oKmBVxzqBqHfDxW_4mZ1OTSc2F5OztIJYmF03uu4I_yIwQpWtZ-UGDzwm-6OQYtDigN4wKanie8syXsn5hAOEBEun6v7bTOCJHPJenr03c93Qb5clWraob2XVwZnYrMeWqwCmVHDPz5n2ZMYLE2DWaZRPqC13PrqVtperR4XRIi4eMe0GEgxwzHIUUopIj-fGw9hzrY_Wnv1N6w7BN-RAFv9BasDdA0Lq5jMHnI9TdDNL62-XQ6Um72Ouk6O2iZLAsh_-s9tWUbS_vnV8nULjQQ-nSy9U7X7IAoTpXVORI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "C++",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Bjarne Stroustrup",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "1540192",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or \"C with Classes\".",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Book Details",
+			"request": {
+				"url": {
+					"raw": "http://localhost/task/api/book-details?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task",
+						"api",
+						"book-details"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTYzMjc1MTJjMjFhNmJjYjUxZDFiMzVkMzM2M2EwOTZkMzE1ZThmOTY0ZGZiOGQ0ODQ1YjNjMzUwMmEwYTQ5YmQ5NWFiNWNhOTRjZjMyZDQiLCJpYXQiOjE2MjQ4OTkwNjkuMzAwMjQ1LCJuYmYiOjE2MjQ4OTkwNjkuMzAwMjUsImV4cCI6MTY1NjQzNTA2OS4yOTM1NjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.NCUizCVSpkV7eKXuPrFXpMxSKAVF7VyAFhn8OyzvrBAnzG16IM_wc11E8G9CDukX7l4Ma9vrPgD49IkDmX0EKY5FW3aAmNHHs5SIlGZK7oJR2nC6QtcFreGyZhfWIpaRvCox9W0eSTqCwfgO3yzer0ZjE9BFFn_kwgEXUf0WWOVEcP6IaFxXLej6kMjsegJjC8vj7dK9vc7ccEBC_ERZ_Yx39y-NAP7cd9oN07nxEcOyimMX3BhwKkmmneV2DS-l27DSubpxHbHX4E1eGg47bqCbPpCW-YWSxAK3HG13VQ_x_J1YDrYWPydi13rprDPl1C8_cLHS3prq4UNBgOeqCnJFZ2MPy_qq5uCmGCHvH4H7kQIpqB31aWHIlTs9QUDS7oKmBVxzqBqHfDxW_4mZ1OTSc2F5OztIJYmF03uu4I_yIwQpWtZ-UGDzwm-6OQYtDigN4wKanie8syXsn5hAOEBEun6v7bTOCJHPJenr03c93Qb5clWraob2XVwZnYrMeWqwCmVHDPz5n2ZMYLE2DWaZRPqC13PrqVtperR4XRIi4eMe0GEgxwzHIUUopIj-fGw9hzrY_Wnv1N6w7BN-RAFv9BasDdA0Lq5jMHnI9TdDNL62-XQ6Um72Ouk6O2iZLAsh_-s9tWUbS_vnV8nULjQQ-nSy9U7X7IAoTpXVORI",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Book Details",
+			"request": {
+				"url": {
+					"raw": "http://localhost/task/api/edit-book?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task",
+						"api",
+						"edit-book"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTYzMjc1MTJjMjFhNmJjYjUxZDFiMzVkMzM2M2EwOTZkMzE1ZThmOTY0ZGZiOGQ0ODQ1YjNjMzUwMmEwYTQ5YmQ5NWFiNWNhOTRjZjMyZDQiLCJpYXQiOjE2MjQ4OTkwNjkuMzAwMjQ1LCJuYmYiOjE2MjQ4OTkwNjkuMzAwMjUsImV4cCI6MTY1NjQzNTA2OS4yOTM1NjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.NCUizCVSpkV7eKXuPrFXpMxSKAVF7VyAFhn8OyzvrBAnzG16IM_wc11E8G9CDukX7l4Ma9vrPgD49IkDmX0EKY5FW3aAmNHHs5SIlGZK7oJR2nC6QtcFreGyZhfWIpaRvCox9W0eSTqCwfgO3yzer0ZjE9BFFn_kwgEXUf0WWOVEcP6IaFxXLej6kMjsegJjC8vj7dK9vc7ccEBC_ERZ_Yx39y-NAP7cd9oN07nxEcOyimMX3BhwKkmmneV2DS-l27DSubpxHbHX4E1eGg47bqCbPpCW-YWSxAK3HG13VQ_x_J1YDrYWPydi13rprDPl1C8_cLHS3prq4UNBgOeqCnJFZ2MPy_qq5uCmGCHvH4H7kQIpqB31aWHIlTs9QUDS7oKmBVxzqBqHfDxW_4mZ1OTSc2F5OztIJYmF03uu4I_yIwQpWtZ-UGDzwm-6OQYtDigN4wKanie8syXsn5hAOEBEun6v7bTOCJHPJenr03c93Qb5clWraob2XVwZnYrMeWqwCmVHDPz5n2ZMYLE2DWaZRPqC13PrqVtperR4XRIi4eMe0GEgxwzHIUUopIj-fGw9hzrY_Wnv1N6w7BN-RAFv9BasDdA0Lq5jMHnI9TdDNL62-XQ6Um72Ouk6O2iZLAsh_-s9tWUbS_vnV8nULjQQ-nSy9U7X7IAoTpXVORI",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book Details",
+			"request": {
+				"url": "http://localhost/task/api/update-book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTYzMjc1MTJjMjFhNmJjYjUxZDFiMzVkMzM2M2EwOTZkMzE1ZThmOTY0ZGZiOGQ0ODQ1YjNjMzUwMmEwYTQ5YmQ5NWFiNWNhOTRjZjMyZDQiLCJpYXQiOjE2MjQ4OTkwNjkuMzAwMjQ1LCJuYmYiOjE2MjQ4OTkwNjkuMzAwMjUsImV4cCI6MTY1NjQzNTA2OS4yOTM1NjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.NCUizCVSpkV7eKXuPrFXpMxSKAVF7VyAFhn8OyzvrBAnzG16IM_wc11E8G9CDukX7l4Ma9vrPgD49IkDmX0EKY5FW3aAmNHHs5SIlGZK7oJR2nC6QtcFreGyZhfWIpaRvCox9W0eSTqCwfgO3yzer0ZjE9BFFn_kwgEXUf0WWOVEcP6IaFxXLej6kMjsegJjC8vj7dK9vc7ccEBC_ERZ_Yx39y-NAP7cd9oN07nxEcOyimMX3BhwKkmmneV2DS-l27DSubpxHbHX4E1eGg47bqCbPpCW-YWSxAK3HG13VQ_x_J1YDrYWPydi13rprDPl1C8_cLHS3prq4UNBgOeqCnJFZ2MPy_qq5uCmGCHvH4H7kQIpqB31aWHIlTs9QUDS7oKmBVxzqBqHfDxW_4mZ1OTSc2F5OztIJYmF03uu4I_yIwQpWtZ-UGDzwm-6OQYtDigN4wKanie8syXsn5hAOEBEun6v7bTOCJHPJenr03c93Qb5clWraob2XVwZnYrMeWqwCmVHDPz5n2ZMYLE2DWaZRPqC13PrqVtperR4XRIi4eMe0GEgxwzHIUUopIj-fGw9hzrY_Wnv1N6w7BN-RAFv9BasDdA0Lq5jMHnI9TdDNL62-XQ6Um72Ouk6O2iZLAsh_-s9tWUbS_vnV8nULjQQ-nSy9U7X7IAoTpXVORI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "C",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Bjarne",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "21312312",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book Details",
+			"request": {
+				"url": "http://localhost/task/api/delete-book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTYzMjc1MTJjMjFhNmJjYjUxZDFiMzVkMzM2M2EwOTZkMzE1ZThmOTY0ZGZiOGQ0ODQ1YjNjMzUwMmEwYTQ5YmQ5NWFiNWNhOTRjZjMyZDQiLCJpYXQiOjE2MjQ4OTkwNjkuMzAwMjQ1LCJuYmYiOjE2MjQ4OTkwNjkuMzAwMjUsImV4cCI6MTY1NjQzNTA2OS4yOTM1NjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.NCUizCVSpkV7eKXuPrFXpMxSKAVF7VyAFhn8OyzvrBAnzG16IM_wc11E8G9CDukX7l4Ma9vrPgD49IkDmX0EKY5FW3aAmNHHs5SIlGZK7oJR2nC6QtcFreGyZhfWIpaRvCox9W0eSTqCwfgO3yzer0ZjE9BFFn_kwgEXUf0WWOVEcP6IaFxXLej6kMjsegJjC8vj7dK9vc7ccEBC_ERZ_Yx39y-NAP7cd9oN07nxEcOyimMX3BhwKkmmneV2DS-l27DSubpxHbHX4E1eGg47bqCbPpCW-YWSxAK3HG13VQ_x_J1YDrYWPydi13rprDPl1C8_cLHS3prq4UNBgOeqCnJFZ2MPy_qq5uCmGCHvH4H7kQIpqB31aWHIlTs9QUDS7oKmBVxzqBqHfDxW_4mZ1OTSc2F5OztIJYmF03uu4I_yIwQpWtZ-UGDzwm-6OQYtDigN4wKanie8syXsn5hAOEBEun6v7bTOCJHPJenr03c93Qb5clWraob2XVwZnYrMeWqwCmVHDPz5n2ZMYLE2DWaZRPqC13PrqVtperR4XRIi4eMe0GEgxwzHIUUopIj-fGw9hzrY_Wnv1N6w7BN-RAFv9BasDdA0Lq5jMHnI9TdDNL62-XQ6Um72Ouk6O2iZLAsh_-s9tWUbS_vnV8nULjQQ-nSy9U7X7IAoTpXVORI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
